@@ -1,3 +1,6 @@
+<!-- //Template helps us create lots of pages with similar title -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,22 @@
 </head>
 <body>
 
-    <h1>Its a <%= kindOfDay %> </h1>
+    <h1>  <%= kindOfDay %> </h1>
 
+    <ul>
+        <li>Study wd</li>
+        <li>study devops</li>
+        <li>study dp</li>
+
+        <% for(var i =0; i< newListItems.length;i++) { %>
+        <li><%= newListItems[i] %> </li>
+        <% } %> 
+    </ul>
+
+    <form action="/" method="POST">
+    
+    <input type="text" placeholder="type your todo" name="newitem">
+    <button type="submit" name="button">ADD</button>
+    </form>
 </body>
 </html>
